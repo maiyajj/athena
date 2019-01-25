@@ -1,0 +1,2 @@
+# athena
+Athena, often given the epithet Pallas, is an ancient Greek goddess associated with wisdom, handicraft, and warfare, who was later syncretized with the Roman goddess Minerva. Athena was regarded as the patron and protectress of various cities across Greece, particularly the city of Athens, from which she most likely received her name. She is usually shown in art wearing a helmet and holding a spear. Her major symbols include owls, olive trees, snakes, and the Gorgoneion.

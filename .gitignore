@@ -1,0 +1,13 @@
+.coverage
+.venv
+
+*.db
+*.log
+*.pickle
+*.pkl
+*.pyc
+
+/env/
+/.*cache/
+/.idea/
+/static/

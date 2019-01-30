@@ -4,14 +4,14 @@ from enum import Enum
 
 import itchat
 
-from src.core.storage import Storage, MemoryStorage
+from src.core.storage import MemoryStorage, Storage
 
 
 class ChatRooms(Enum):
     SERVYOU_ROOMMATE = '这个名字真难看'
     SERVYOU_PARTNER = '啦啦啦啦啦啦'
     JUNIOR_HIGH_SCHOOL_PARTNER = '。我们一起走过的时光🌹'
-    Athena_TEST_ROOM = 'Athena测试群'
+    ATHENA_TEST_ROOM = 'Athena测试群'
 
     def __new__(cls, value):
         obj = object.__new__(cls)
@@ -60,7 +60,7 @@ class ChatRooms(Enum):
 class Patterns(object):
     html_title = re.compile(r'<title[^>]*>([^<]+?)</title>')
     url = re.compile(r'(http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)')
-    why = re.compile(r'^.*[为什么].*$')
+    why = re.compile(r'^.*为什么.*$')
 
 
 class ChatRoomMessage(object):

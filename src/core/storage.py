@@ -14,6 +14,13 @@ class MemoryStorage(object):
         self.__memory_dict[key] = value
         return self
 
+    def pop(self, key):
+        if self.__memory_dict.get(key, False):
+            self.__memory_dict.pop(key)
+
+    def clear(self):
+        self.__memory_dict.clear()
+
 
 class FileStorage(object):
     pass

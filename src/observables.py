@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 raw_stream = Subject()
 
 # 收指定微信群的数据
-stream = raw_stream.map(lambda message: ChatRoomMessage(message)).filter(lambda message: message.chatroom)
+stream = raw_stream.map(lambda message_data: ChatRoomMessage(message_data)).filter(lambda message: message.chatroom)
 
 
 def subscribe(observable):
@@ -25,6 +25,8 @@ def subscribe(observable):
 
 
 def no_exception(func):
+    """ 无异常装饰器，直接打log """
+
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
